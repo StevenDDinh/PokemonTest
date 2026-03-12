@@ -4,6 +4,8 @@ on: push
 
 jobs:
   build-test:
+
+
   build:
     name : Integration Continue = tests + build + generation rapports AUTO
     runs-on: ubuntu-latest
@@ -25,3 +27,5 @@ jobs:
         run:  chmod +x ./gradlew
       - name: Build & test and compute JaCoCo reports
         run: ./gradlew build #jacocoTestReport
+      - name: test de rapport
+        run: ./gradlew.bat test
