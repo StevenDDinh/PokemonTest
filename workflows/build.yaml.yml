@@ -3,6 +3,7 @@ name: Java CI
 on: push
 
 jobs:
+  build-test:
   build:
     name : Integration Continue = tests + build + generation rapports AUTO
     runs-on: ubuntu-latest
